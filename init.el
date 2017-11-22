@@ -25,7 +25,7 @@
 (helm-mode 1)
 
 ;;overwatch theme
-(load "~/.emacs.d/overwatch-theme.el")
+(load "~/.emacs.d/Overwatch-theme.el")
 (set-cursor-color "#45ea22 ")
 (load-theme 'Overwatch)
 (custom-set-variables
