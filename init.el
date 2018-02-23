@@ -39,6 +39,9 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)                 ; optional
 
+;;javascript autocompletion
+(add-hook 'js2-mode-hook 'ac-js2-mode)
+
 ;;helm set up
 (require 'helm)
 (global-set-key (kbd "M-x") 'helm-M-x)
@@ -59,7 +62,7 @@
     ("e42c65cdf4f64316be1c1b0d1f905b5f91c7b0072ff97124436bd3f2fbaf5973" "a2526ff60e4ee79acbfd468e2b07811cccd6d8329581b20ef776e24d291ec983" "ebaa636863d8d54972a448e102fd4c5f8de9f3dae73012a0c32ad16d09a9d1c3" "ddf9898f63b41dc6d93b62987f7672efecae2d5f9fdbf886709002354539c2dc" default)))
  '(package-selected-packages
    (quote
-    (virtualenv jedi auto-yasnippet xpm floobits auto-complete rudel base16-theme aggressive-indent))))
+    (ac-js2 ac-html company-irony company-irony-c-headers company virtualenv jedi auto-yasnippet xpm floobits auto-complete rudel base16-theme aggressive-indent))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
